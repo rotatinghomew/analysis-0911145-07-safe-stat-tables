@@ -1,0 +1,234 @@
+{
+  "variables": {
+    "a_boxes": 17,
+    "a_sales": 8500,
+    "b_boxes": 23,
+    "b_sales": 12650,
+    "c_boxes": 41,
+    "c_sales": 24600,
+    "d_boxes": 19,
+    "d_sales": 9880,
+    "old_a_boxes": 15,
+    "old_b_boxes": 23
+  },
+  "bounds": {
+    "a_boxes": [
+      0,
+      200
+    ],
+    "a_sales": [
+      0,
+      150000
+    ],
+    "b_boxes": [
+      0,
+      200
+    ],
+    "b_sales": [
+      0,
+      150000
+    ],
+    "c_boxes": [
+      0,
+      200
+    ],
+    "c_sales": [
+      0,
+      150000
+    ],
+    "d_boxes": [
+      0,
+      200
+    ],
+    "d_sales": [
+      0,
+      150000
+    ],
+    "old_a_boxes": [
+      0,
+      200
+    ],
+    "old_b_boxes": [
+      0,
+      200
+    ]
+  },
+  "cells": [
+    {
+      "id": "north-boxes",
+      "table": "county",
+      "expression": {
+        "a_boxes": 1,
+        "b_boxes": 1
+      },
+      "value": 40,
+      "utility": 4,
+      "scope": "current-month"
+    },
+    {
+      "id": "south-boxes",
+      "table": "county",
+      "expression": {
+        "c_boxes": 1,
+        "d_boxes": 1
+      },
+      "value": 60,
+      "utility": 4,
+      "scope": "current-month"
+    },
+    {
+      "id": "total-boxes",
+      "table": "county",
+      "expression": {
+        "a_boxes": 1,
+        "b_boxes": 1,
+        "c_boxes": 1,
+        "d_boxes": 1
+      },
+      "value": 100,
+      "utility": 12,
+      "scope": "current-month"
+    },
+    {
+      "id": "web-boxes",
+      "table": "channel",
+      "expression": {
+        "a_boxes": 1,
+        "c_boxes": 1
+      },
+      "value": 58,
+      "utility": 7,
+      "scope": "current-month"
+    },
+    {
+      "id": "offline-boxes",
+      "table": "channel",
+      "expression": {
+        "b_boxes": 1,
+        "d_boxes": 1
+      },
+      "value": 42,
+      "utility": 5,
+      "scope": "current-month"
+    },
+    {
+      "id": "north-sales",
+      "table": "county",
+      "expression": {
+        "a_sales": 1,
+        "b_sales": 1
+      },
+      "value": 21150,
+      "utility": 3,
+      "scope": "current-month"
+    },
+    {
+      "id": "south-sales",
+      "table": "county",
+      "expression": {
+        "c_sales": 1,
+        "d_sales": 1
+      },
+      "value": 34480,
+      "utility": 3,
+      "scope": "current-month"
+    },
+    {
+      "id": "total-sales",
+      "table": "county",
+      "expression": {
+        "a_sales": 1,
+        "b_sales": 1,
+        "c_sales": 1,
+        "d_sales": 1
+      },
+      "value": 55630,
+      "utility": 9,
+      "scope": "current-month"
+    },
+    {
+      "id": "web-sales",
+      "table": "channel",
+      "expression": {
+        "a_sales": 1,
+        "c_sales": 1
+      },
+      "value": 33100,
+      "utility": 6,
+      "scope": "current-month"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "a-price",
+      "expression": {
+        "a_sales": 1,
+        "a_boxes": -500
+      },
+      "lower": 0,
+      "upper": 40000
+    },
+    {
+      "id": "b-price",
+      "expression": {
+        "b_sales": 1,
+        "b_boxes": -500
+      },
+      "lower": 0,
+      "upper": 40000
+    },
+    {
+      "id": "c-price",
+      "expression": {
+        "c_sales": 1,
+        "c_boxes": -500
+      },
+      "lower": 0,
+      "upper": 40000
+    },
+    {
+      "id": "d-price",
+      "expression": {
+        "d_sales": 1,
+        "d_boxes": -500
+      },
+      "lower": 0,
+      "upper": 40000
+    }
+  ],
+  "protected": [
+    {
+      "id": "a-volume",
+      "expression": {
+        "a_boxes": 1
+      },
+      "minimum_width": 12
+    },
+    {
+      "id": "b-sales",
+      "expression": {
+        "b_sales": 1
+      },
+      "minimum_width": 5000
+    }
+  ],
+  "archive": [
+    {
+      "id": "old-north",
+      "expression": {
+        "old_a_boxes": 1,
+        "old_b_boxes": 1
+      },
+      "value": 38,
+      "scope": "previous-month"
+    },
+    {
+      "id": "already-a",
+      "expression": {
+        "a_boxes": 1
+      },
+      "value": 17,
+      "scope": "current-month"
+    }
+  ]
+}
