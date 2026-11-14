@@ -1,13 +1,13 @@
+import json
 import os
 import threading
 import unittest
-
 from app.client import analysis
 from app.server import make_server
-from app.store import load_case
+from app.study_store import load_case
 
 
-@unittest.skipUnless(os.environ.get('RUN_ACCEPTANCE') == '1', 'new analysis feature not enabled')
+@unittest.skipUnless(os.environ.get('RUN_ACCEPTANCE') == '1', '分析消费接口尚未接入')
 class AnalysisContractTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -22,24 +22,30 @@ class AnalysisContractTests(unittest.TestCase):
         cls.worker.join(timeout=3)
         cls.server.server_close()
 
-    def test_result_has_consumer_fields_and_provenance(self):
+    def test_consumer_contract_and_provenance(self):
         result = analysis(self.base)
         self.assertEqual(result['snapshot'], load_case('standard')['_snapshot'])
-        for field in ['released', 'suppressed', 'ranges', 'status', 'diagnostics']:
+        for field in ['release', 'pooled', 'backtest', 'diagnostics']:
             self.assertIn(field, result)
+        json.dumps(result, allow_nan=False)
+
+    def test_information_limits_are_visible(self):
+        result = analysis(self.base, 'edge')
+        self.assertEqual(result['snapshot'], load_case('edge')['_snapshot'])
         self.assertTrue(result['diagnostics'])
 
-    def test_edge_case_is_not_silently_treated_as_standard(self):
-        standard = analysis(self.base)
-        edge = analysis(self.base, 'edge')
-        self.assertNotEqual(standard['snapshot'], edge['snapshot'])
-        self.assertTrue(edge['diagnostics'])
+    def test_copying_the_same_upstream_distribution_does_not_change_its_vote(self):
+        original = analysis(self.base)['pooled']
+        copied = analysis(self.base, 'edge')['pooled']
+        self.assertEqual(original, copied)
 
-    def test_irreversible_prior_disclosure_is_not_safe(self):
-        result = analysis(self.base, 'edge')
-        self.assertEqual(result['status'], 'already_disclosed')
+    def test_future_truth_versions_cannot_improve_the_current_release(self):
+        original = analysis(self.base)['pooled']
+        future = analysis(self.base, 'future')['pooled']
+        self.assertEqual(original, future)
 
-    def test_public_export_has_no_private_vector(self):
-        result = analysis(self.base)
-        self.assertNotIn('variables', result)
-        self.assertNotIn('internal_only', result)
+    def test_pooled_probabilities_remain_a_distribution(self):
+        for row in analysis(self.base)['pooled']:
+            self.assertTrue(row['pmf'])
+            self.assertAlmostEqual(sum(point[1] for point in row['pmf']), 1)
+            self.assertTrue(all(point[0] >= 0 and 0 <= point[1] <= 1 for point in row['pmf']))

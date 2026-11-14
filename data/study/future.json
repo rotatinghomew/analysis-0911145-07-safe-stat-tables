@@ -1,0 +1,1843 @@
+{
+  "kind": "forecasts",
+  "products": [
+    {
+      "id": "carrier",
+      "sources": [
+        "route-history"
+      ]
+    },
+    {
+      "id": "reseller",
+      "sources": [
+        "route-history"
+      ]
+    },
+    {
+      "id": "cooperative",
+      "sources": [
+        "grower-bookings"
+      ]
+    },
+    {
+      "id": "platform",
+      "sources": [
+        "online-intents",
+        "route-history"
+      ]
+    }
+  ],
+  "predictions": [
+    {
+      "id": "0-carrier",
+      "origin": 0,
+      "target": 2,
+      "issued_at": 0,
+      "known_at": 0,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          70,
+          0.2
+        ],
+        [
+          80,
+          0.6
+        ],
+        [
+          90,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "0-reseller",
+      "origin": 0,
+      "target": 2,
+      "issued_at": 0,
+      "known_at": 0,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          74,
+          0.2
+        ],
+        [
+          84,
+          0.6
+        ],
+        [
+          94,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "0-cooperative",
+      "origin": 0,
+      "target": 2,
+      "issued_at": 0,
+      "known_at": 0,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          78,
+          0.2
+        ],
+        [
+          88,
+          0.6
+        ],
+        [
+          98,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "1-carrier",
+      "origin": 1,
+      "target": 3,
+      "issued_at": 1,
+      "known_at": 1,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          73,
+          0.2
+        ],
+        [
+          83,
+          0.6
+        ],
+        [
+          93,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "1-reseller",
+      "origin": 1,
+      "target": 3,
+      "issued_at": 1,
+      "known_at": 1,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          77,
+          0.2
+        ],
+        [
+          87,
+          0.6
+        ],
+        [
+          97,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "1-cooperative",
+      "origin": 1,
+      "target": 3,
+      "issued_at": 1,
+      "known_at": 1,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          81,
+          0.2
+        ],
+        [
+          91,
+          0.6
+        ],
+        [
+          101,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "2-carrier",
+      "origin": 2,
+      "target": 4,
+      "issued_at": 2,
+      "known_at": 2,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          76,
+          0.2
+        ],
+        [
+          86,
+          0.6
+        ],
+        [
+          96,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "2-reseller",
+      "origin": 2,
+      "target": 4,
+      "issued_at": 2,
+      "known_at": 2,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          80,
+          0.2
+        ],
+        [
+          90,
+          0.6
+        ],
+        [
+          100,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "2-cooperative",
+      "origin": 2,
+      "target": 4,
+      "issued_at": 2,
+      "known_at": 2,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          84,
+          0.2
+        ],
+        [
+          94,
+          0.6
+        ],
+        [
+          104,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "3-carrier",
+      "origin": 3,
+      "target": 5,
+      "issued_at": 3,
+      "known_at": 3,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          79,
+          0.2
+        ],
+        [
+          89,
+          0.6
+        ],
+        [
+          99,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "3-reseller",
+      "origin": 3,
+      "target": 5,
+      "issued_at": 3,
+      "known_at": 3,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          83,
+          0.2
+        ],
+        [
+          93,
+          0.6
+        ],
+        [
+          103,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "3-cooperative",
+      "origin": 3,
+      "target": 5,
+      "issued_at": 3,
+      "known_at": 3,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          87,
+          0.2
+        ],
+        [
+          97,
+          0.6
+        ],
+        [
+          107,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "4-carrier",
+      "origin": 4,
+      "target": 6,
+      "issued_at": 4,
+      "known_at": 4,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          82,
+          0.2
+        ],
+        [
+          92,
+          0.6
+        ],
+        [
+          102,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "4-reseller",
+      "origin": 4,
+      "target": 6,
+      "issued_at": 4,
+      "known_at": 4,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          86,
+          0.2
+        ],
+        [
+          96,
+          0.6
+        ],
+        [
+          106,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "4-cooperative",
+      "origin": 4,
+      "target": 6,
+      "issued_at": 4,
+      "known_at": 4,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          90,
+          0.2
+        ],
+        [
+          100,
+          0.6
+        ],
+        [
+          110,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "5-carrier",
+      "origin": 5,
+      "target": 7,
+      "issued_at": 5,
+      "known_at": 5,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          85,
+          0.2
+        ],
+        [
+          95,
+          0.6
+        ],
+        [
+          105,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "5-reseller",
+      "origin": 5,
+      "target": 7,
+      "issued_at": 5,
+      "known_at": 5,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          89,
+          0.2
+        ],
+        [
+          99,
+          0.6
+        ],
+        [
+          109,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "5-cooperative",
+      "origin": 5,
+      "target": 7,
+      "issued_at": 5,
+      "known_at": 5,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          93,
+          0.2
+        ],
+        [
+          103,
+          0.6
+        ],
+        [
+          113,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "6-carrier",
+      "origin": 6,
+      "target": 8,
+      "issued_at": 6,
+      "known_at": 6,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          88,
+          0.2
+        ],
+        [
+          98,
+          0.6
+        ],
+        [
+          108,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "6-reseller",
+      "origin": 6,
+      "target": 8,
+      "issued_at": 6,
+      "known_at": 6,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          92,
+          0.2
+        ],
+        [
+          102,
+          0.6
+        ],
+        [
+          112,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "6-cooperative",
+      "origin": 6,
+      "target": 8,
+      "issued_at": 6,
+      "known_at": 6,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          96,
+          0.2
+        ],
+        [
+          106,
+          0.6
+        ],
+        [
+          116,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "6-platform",
+      "origin": 6,
+      "target": 8,
+      "issued_at": 6,
+      "known_at": 6,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          100,
+          0.2
+        ],
+        [
+          110,
+          0.6
+        ],
+        [
+          120,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "7-carrier",
+      "origin": 7,
+      "target": 9,
+      "issued_at": 7,
+      "known_at": 7,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          91,
+          0.2
+        ],
+        [
+          101,
+          0.6
+        ],
+        [
+          111,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "7-reseller",
+      "origin": 7,
+      "target": 9,
+      "issued_at": 7,
+      "known_at": 7,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          95,
+          0.2
+        ],
+        [
+          105,
+          0.6
+        ],
+        [
+          115,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "7-cooperative",
+      "origin": 7,
+      "target": 9,
+      "issued_at": 7,
+      "known_at": 7,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          99,
+          0.2
+        ],
+        [
+          109,
+          0.6
+        ],
+        [
+          119,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "7-platform",
+      "origin": 7,
+      "target": 9,
+      "issued_at": 7,
+      "known_at": 7,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          103,
+          0.2
+        ],
+        [
+          113,
+          0.6
+        ],
+        [
+          123,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "8-carrier",
+      "origin": 8,
+      "target": 10,
+      "issued_at": 8,
+      "known_at": 8,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          94,
+          0.2
+        ],
+        [
+          104,
+          0.6
+        ],
+        [
+          114,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "8-reseller",
+      "origin": 8,
+      "target": 10,
+      "issued_at": 8,
+      "known_at": 8,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          98,
+          0.2
+        ],
+        [
+          108,
+          0.6
+        ],
+        [
+          118,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "8-cooperative",
+      "origin": 8,
+      "target": 10,
+      "issued_at": 8,
+      "known_at": 8,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          102,
+          0.2
+        ],
+        [
+          112,
+          0.6
+        ],
+        [
+          122,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "8-platform",
+      "origin": 8,
+      "target": 10,
+      "issued_at": 8,
+      "known_at": 8,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          106,
+          0.2
+        ],
+        [
+          116,
+          0.6
+        ],
+        [
+          126,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "9-carrier",
+      "origin": 9,
+      "target": 11,
+      "issued_at": 9,
+      "known_at": 9,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          97,
+          0.2
+        ],
+        [
+          107,
+          0.6
+        ],
+        [
+          117,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "9-reseller",
+      "origin": 9,
+      "target": 11,
+      "issued_at": 9,
+      "known_at": 9,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          101,
+          0.2
+        ],
+        [
+          111,
+          0.6
+        ],
+        [
+          121,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "9-cooperative",
+      "origin": 9,
+      "target": 11,
+      "issued_at": 9,
+      "known_at": 9,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          105,
+          0.2
+        ],
+        [
+          115,
+          0.6
+        ],
+        [
+          125,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "9-platform",
+      "origin": 9,
+      "target": 11,
+      "issued_at": 9,
+      "known_at": 9,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          109,
+          0.2
+        ],
+        [
+          119,
+          0.6
+        ],
+        [
+          129,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "10-carrier",
+      "origin": 10,
+      "target": 12,
+      "issued_at": 10,
+      "known_at": 10,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          100,
+          0.2
+        ],
+        [
+          110,
+          0.6
+        ],
+        [
+          120,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "10-reseller",
+      "origin": 10,
+      "target": 12,
+      "issued_at": 10,
+      "known_at": 10,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          104,
+          0.2
+        ],
+        [
+          114,
+          0.6
+        ],
+        [
+          124,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "10-cooperative",
+      "origin": 10,
+      "target": 12,
+      "issued_at": 10,
+      "known_at": 10,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          108,
+          0.2
+        ],
+        [
+          118,
+          0.6
+        ],
+        [
+          128,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "10-platform",
+      "origin": 10,
+      "target": 12,
+      "issued_at": 10,
+      "known_at": 10,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          112,
+          0.2
+        ],
+        [
+          122,
+          0.6
+        ],
+        [
+          132,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "11-carrier",
+      "origin": 11,
+      "target": 13,
+      "issued_at": 11,
+      "known_at": 11,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          103,
+          0.2
+        ],
+        [
+          113,
+          0.6
+        ],
+        [
+          123,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "11-reseller",
+      "origin": 11,
+      "target": 13,
+      "issued_at": 11,
+      "known_at": 11,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          107,
+          0.2
+        ],
+        [
+          117,
+          0.6
+        ],
+        [
+          127,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "11-cooperative",
+      "origin": 11,
+      "target": 13,
+      "issued_at": 11,
+      "known_at": 11,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          111,
+          0.2
+        ],
+        [
+          121,
+          0.6
+        ],
+        [
+          131,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "11-platform",
+      "origin": 11,
+      "target": 13,
+      "issued_at": 11,
+      "known_at": 11,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          115,
+          0.2
+        ],
+        [
+          125,
+          0.6
+        ],
+        [
+          135,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "12-carrier",
+      "origin": 12,
+      "target": 14,
+      "issued_at": 12,
+      "known_at": 12,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          106,
+          0.2
+        ],
+        [
+          116,
+          0.6
+        ],
+        [
+          126,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "12-reseller",
+      "origin": 12,
+      "target": 14,
+      "issued_at": 12,
+      "known_at": 12,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          110,
+          0.2
+        ],
+        [
+          120,
+          0.6
+        ],
+        [
+          130,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "12-cooperative",
+      "origin": 12,
+      "target": 14,
+      "issued_at": 12,
+      "known_at": 12,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          114,
+          0.2
+        ],
+        [
+          124,
+          0.6
+        ],
+        [
+          134,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "12-platform",
+      "origin": 12,
+      "target": 14,
+      "issued_at": 12,
+      "known_at": 12,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          118,
+          0.2
+        ],
+        [
+          128,
+          0.6
+        ],
+        [
+          138,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "13-carrier",
+      "origin": 13,
+      "target": 15,
+      "issued_at": 13,
+      "known_at": 13,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          109,
+          0.2
+        ],
+        [
+          119,
+          0.6
+        ],
+        [
+          129,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "13-reseller",
+      "origin": 13,
+      "target": 15,
+      "issued_at": 13,
+      "known_at": 13,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          113,
+          0.2
+        ],
+        [
+          123,
+          0.6
+        ],
+        [
+          133,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "13-cooperative",
+      "origin": 13,
+      "target": 15,
+      "issued_at": 13,
+      "known_at": 13,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          117,
+          0.2
+        ],
+        [
+          127,
+          0.6
+        ],
+        [
+          137,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "13-platform",
+      "origin": 13,
+      "target": 15,
+      "issued_at": 13,
+      "known_at": 13,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          121,
+          0.2
+        ],
+        [
+          131,
+          0.6
+        ],
+        [
+          141,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "14-carrier",
+      "origin": 14,
+      "target": 16,
+      "issued_at": 14,
+      "known_at": 14,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          112,
+          0.2
+        ],
+        [
+          122,
+          0.6
+        ],
+        [
+          132,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "14-reseller",
+      "origin": 14,
+      "target": 16,
+      "issued_at": 14,
+      "known_at": 14,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          116,
+          0.2
+        ],
+        [
+          126,
+          0.6
+        ],
+        [
+          136,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "14-cooperative",
+      "origin": 14,
+      "target": 16,
+      "issued_at": 14,
+      "known_at": 14,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          120,
+          0.2
+        ],
+        [
+          130,
+          0.6
+        ],
+        [
+          140,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "14-platform",
+      "origin": 14,
+      "target": 16,
+      "issued_at": 14,
+      "known_at": 14,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          124,
+          0.2
+        ],
+        [
+          134,
+          0.6
+        ],
+        [
+          144,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "15-carrier",
+      "origin": 15,
+      "target": 17,
+      "issued_at": 15,
+      "known_at": 15,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          115,
+          0.2
+        ],
+        [
+          125,
+          0.6
+        ],
+        [
+          135,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "15-reseller",
+      "origin": 15,
+      "target": 17,
+      "issued_at": 15,
+      "known_at": 15,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          119,
+          0.2
+        ],
+        [
+          129,
+          0.6
+        ],
+        [
+          139,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "15-cooperative",
+      "origin": 15,
+      "target": 17,
+      "issued_at": 15,
+      "known_at": 15,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          123,
+          0.2
+        ],
+        [
+          133,
+          0.6
+        ],
+        [
+          143,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "15-platform",
+      "origin": 15,
+      "target": 17,
+      "issued_at": 15,
+      "known_at": 15,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          127,
+          0.2
+        ],
+        [
+          137,
+          0.6
+        ],
+        [
+          147,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "16-carrier",
+      "origin": 16,
+      "target": 18,
+      "issued_at": 16,
+      "known_at": 16,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          118,
+          0.2
+        ],
+        [
+          128,
+          0.6
+        ],
+        [
+          138,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "16-reseller",
+      "origin": 16,
+      "target": 18,
+      "issued_at": 16,
+      "known_at": 16,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          122,
+          0.2
+        ],
+        [
+          132,
+          0.6
+        ],
+        [
+          142,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "16-cooperative",
+      "origin": 16,
+      "target": 18,
+      "issued_at": 16,
+      "known_at": 16,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          126,
+          0.2
+        ],
+        [
+          136,
+          0.6
+        ],
+        [
+          146,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "16-platform",
+      "origin": 16,
+      "target": 18,
+      "issued_at": 16,
+      "known_at": 16,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          130,
+          0.2
+        ],
+        [
+          140,
+          0.6
+        ],
+        [
+          150,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "17-carrier",
+      "origin": 17,
+      "target": 19,
+      "issued_at": 17,
+      "known_at": 17,
+      "product": "carrier",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          121,
+          0.2
+        ],
+        [
+          131,
+          0.6
+        ],
+        [
+          141,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "17-reseller",
+      "origin": 17,
+      "target": 19,
+      "issued_at": 17,
+      "known_at": 17,
+      "product": "reseller",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          125,
+          0.2
+        ],
+        [
+          135,
+          0.6
+        ],
+        [
+          145,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "17-cooperative",
+      "origin": 17,
+      "target": 19,
+      "issued_at": 17,
+      "known_at": 17,
+      "product": "cooperative",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          129,
+          0.2
+        ],
+        [
+          139,
+          0.6
+        ],
+        [
+          149,
+          0.2
+        ]
+      ]
+    },
+    {
+      "id": "17-platform",
+      "origin": 17,
+      "target": 19,
+      "issued_at": 17,
+      "known_at": 17,
+      "product": "platform",
+      "unit": "boxes",
+      "revision": 1,
+      "pmf": [
+        [
+          133,
+          0.2
+        ],
+        [
+          143,
+          0.6
+        ],
+        [
+          153,
+          0.2
+        ]
+      ]
+    }
+  ],
+  "truth": [
+    {
+      "target": 2,
+      "boxes": 82,
+      "known_at": 4,
+      "revision": 1
+    },
+    {
+      "target": 3,
+      "boxes": 86,
+      "known_at": 5,
+      "revision": 1
+    },
+    {
+      "target": 4,
+      "boxes": 90,
+      "known_at": 6,
+      "revision": 1
+    },
+    {
+      "target": 5,
+      "boxes": 94,
+      "known_at": 7,
+      "revision": 1
+    },
+    {
+      "target": 6,
+      "boxes": 98,
+      "known_at": 8,
+      "revision": 1
+    },
+    {
+      "target": 7,
+      "boxes": 97,
+      "known_at": 9,
+      "revision": 1
+    },
+    {
+      "target": 8,
+      "boxes": 101,
+      "known_at": 10,
+      "revision": 1
+    },
+    {
+      "target": 9,
+      "boxes": 105,
+      "known_at": 11,
+      "revision": 1
+    },
+    {
+      "target": 10,
+      "boxes": 109,
+      "known_at": 12,
+      "revision": 1
+    },
+    {
+      "target": 11,
+      "boxes": 113,
+      "known_at": 13,
+      "revision": 1
+    },
+    {
+      "target": 12,
+      "boxes": 112,
+      "known_at": 14,
+      "revision": 1
+    },
+    {
+      "target": 13,
+      "boxes": 116,
+      "known_at": 15,
+      "revision": 1
+    },
+    {
+      "target": 14,
+      "boxes": 120,
+      "known_at": 16,
+      "revision": 1
+    },
+    {
+      "target": 15,
+      "boxes": 124,
+      "known_at": 17,
+      "revision": 1
+    },
+    {
+      "target": 16,
+      "boxes": 128,
+      "known_at": 18,
+      "revision": 1
+    },
+    {
+      "target": 17,
+      "boxes": 127,
+      "known_at": 19,
+      "revision": 1
+    },
+    {
+      "target": 18,
+      "boxes": 131,
+      "known_at": 20,
+      "revision": 1
+    },
+    {
+      "target": 19,
+      "boxes": 135,
+      "known_at": 21,
+      "revision": 1
+    },
+    {
+      "target": 2,
+      "boxes": 10081,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 3,
+      "boxes": 10085,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 4,
+      "boxes": 10089,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 5,
+      "boxes": 10093,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 6,
+      "boxes": 10097,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 7,
+      "boxes": 10096,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 8,
+      "boxes": 10100,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 9,
+      "boxes": 10104,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 10,
+      "boxes": 10108,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 11,
+      "boxes": 10112,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 12,
+      "boxes": 10111,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 13,
+      "boxes": 10115,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 14,
+      "boxes": 10119,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 15,
+      "boxes": 10123,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 16,
+      "boxes": 10127,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 17,
+      "boxes": 10126,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 18,
+      "boxes": 10130,
+      "known_at": 999,
+      "revision": 2
+    },
+    {
+      "target": 19,
+      "boxes": 10134,
+      "known_at": 999,
+      "revision": 2
+    }
+  ],
+  "as_of": 20,
+  "holdout_origins": [
+    14,
+    15,
+    16,
+    17
+  ],
+  "underbooking_cost": 5,
+  "overbooking_cost": 2
+}
